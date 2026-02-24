@@ -14,6 +14,8 @@ pipeline {
           }
         stage('Build') {
             steps {
+                // cd into the proper directory
+                sh "cd A1"
 
                 // Run Maven on a Unix agent.
                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
