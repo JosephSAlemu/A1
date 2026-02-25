@@ -14,6 +14,8 @@ pipeline {
           }
         stage('Build') {
             steps {
+                sh "pwd"
+                sh "ls"
                 // cd into the proper directory
                 sh "cd A1"
 
